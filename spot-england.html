@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>England Hill | Awaji Trip</title>
+    <link rel="icon" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Zen+Maru+Gothic:wght@500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Zen Maru Gothic', sans-serif;
+            background-color: #f0fdf4;
+            color: #14532d;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+
+<body class="pb-20">
+
+    <!-- Header Navigation -->
+    <div class="fixed top-4 left-4 z-50">
+        <a href="day1.html"
+            class="bg-white/80 backdrop-blur text-green-800 p-2 rounded-full shadow-lg flex items-center justify-center w-10 h-10 border border-green-200">
+            <i data-lucide="arrow-left" class="w-5 h-5"></i>
+        </a>
+    </div>
+
+    <img src="england.png" alt="England Hill" class="hero-img">
+
+    <main class="px-5 -mt-8 relative z-10">
+        <div class="bg-white p-6 rounded-2xl shadow-xl border border-green-100">
+            <div class="mb-2">
+                <span class="tag bg-green-100 text-green-700">動物</span>
+                <span class="tag bg-pink-100 text-pink-700">お花畑</span>
+                <span class="tag bg-orange-100 text-orange-700">グルメ</span>
+            </div>
+            <h1 class="text-2xl font-black text-green-800 mb-1">イングランドの丘</h1>
+            <p class="text-xs text-green-600 font-bold mb-4">Awaji Farm Park England Hill</p>
+
+            <p class="text-sm leading-relaxed text-slate-600 mb-6">
+                コアラに会える農業公園！イギリスの湖水地方をイメージした広大な園内で、動物とのふれあいや収穫体験を楽しもう。
+            </p>
+
+            <!-- Info Grid -->
+            <div class="grid grid-cols-2 gap-3 mb-6">
+                <div class="bg-green-50 p-3 rounded-xl">
+                    <i data-lucide="clock" class="w-4 h-4 text-green-600 mb-1"></i>
+                    <p class="text-xs text-slate-500">滞在目安</p>
+                    <p class="font-bold text-green-800">2時間</p>
+                </div>
+                <div class="bg-green-50 p-3 rounded-xl">
+                    <i data-lucide="ticket" class="w-4 h-4 text-green-600 mb-1"></i>
+                    <p class="text-xs text-slate-500">入園料</p>
+                    <p class="font-bold text-green-800">1,200円</p>
+                </div>
+            </div>
+
+            <!-- Must See -->
+            <h2 class="text-lg font-bold text-slate-800 mb-3 flex items-center gap-2">
+                <span
+                    class="bg-green-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs">1</span>
+                Must See
+            </h2>
+            <div class="space-y-4 mb-8">
+                <div class="flex gap-4 items-start">
+                    <div
+                        class="bg-slate-100 w-16 h-16 rounded-lg flex-shrink-0 flex items-center justify-center text-2xl">
+                        🐨</div>
+                    <div>
+                        <h3 class="font-bold text-slate-800">コアラ館</h3>
+                        <p class="text-xs text-slate-600 mt-1">
+                            赤ちゃんコアラ「ナギ」に注目。午前中は比較的起きている確率が高いかも？寝ている姿もキュート。
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div
+                        class="bg-slate-100 w-16 h-16 rounded-lg flex-shrink-0 flex items-center justify-center text-2xl">
+                        🌷</div>
+                    <div>
+                        <h3 class="font-bold text-slate-800">大花畑</h3>
+                        <p class="text-xs text-slate-600 mt-1">
+                            1月は冬咲きチューリップが見頃。インスタ映え間違いなしのフォトスポット。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food -->
+            <h2 class="text-lg font-bold text-slate-800 mb-3 flex items-center gap-2">
+                <span
+                    class="bg-orange-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs">2</span>
+                Recommended Food
+            </h2>
+            <div class="bg-orange-50 p-4 rounded-xl border border-orange-100 mb-4">
+                <h3 class="font-bold text-orange-800 mb-2">🍦 島スイーツ & バーガー</h3>
+                <ul class="text-sm text-slate-700 space-y-2">
+                    <li class="flex items-center gap-2">
+                        <i data-lucide="check" class="w-4 h-4 text-orange-500"></i>
+                        淡路島牛乳ソフトクリーム
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i data-lucide="check" class="w-4 h-4 text-orange-500"></i>
+                        自家製石窯ピザ
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i data-lucide="check" class="w-4 h-4 text-orange-500"></i>
+                        淡路牛バーガー
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Access Link -->
+            <a href="https://www.google.com/maps/search/?api=1&query=イングランドの丘" target="_blank"
+                class="block w-full bg-green-600 text-white font-bold text-center py-3 rounded-xl shadow-lg hover:bg-green-700 transition">
+                <i data-lucide="map-pin" class="w-4 h-4 inline-block mr-1"></i> Google Maps
+            </a>
+
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

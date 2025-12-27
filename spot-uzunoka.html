@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzunoka Memorial Hall | Awaji Trip</title>
+    <link rel="icon" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Zen+Maru+Gothic:wght@500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Zen Maru Gothic', sans-serif;
+            background-color: #fefce8;
+            color: #854d0e;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+
+<body class="pb-20">
+
+    <!-- Header Navigation -->
+    <div class="fixed top-4 left-4 z-50">
+        <a href="day1.html"
+            class="bg-white/80 backdrop-blur text-yellow-800 p-2 rounded-full shadow-lg flex items-center justify-center w-10 h-10 border border-yellow-200">
+            <i data-lucide="arrow-left" class="w-5 h-5"></i>
+        </a>
+    </div>
+
+    <img src="onion.png" alt="Uzunoka Onion" class="hero-img">
+
+    <main class="px-5 -mt-8 relative z-10">
+        <div class="bg-white p-6 rounded-2xl shadow-xl border border-yellow-100">
+            <div class="mb-2">
+                <span class="tag bg-yellow-100 text-yellow-700">ゲーム</span>
+                <span class="tag bg-yellow-100 text-yellow-700">玉ねぎ</span>
+                <span class="tag bg-blue-100 text-blue-700">絶景</span>
+            </div>
+            <h1 class="text-2xl font-black text-yellow-800 mb-1">うずの丘 大鳴門橋記念館</h1>
+            <p class="text-xs text-yellow-600 font-bold mb-4">Uzunoka Onaruto Bridge Memorial Hall</p>
+
+            <p class="text-sm leading-relaxed text-slate-600 mb-6">
+                玉ねぎ愛が爆発している面白スポット。絶景テラスとユーフォキャッチャーで盛り上がろう！
+            </p>
+
+            <!-- Info Grid -->
+            <div class="grid grid-cols-2 gap-3 mb-6">
+                <div class="bg-yellow-50 p-3 rounded-xl">
+                    <i data-lucide="gamepad-2" class="w-4 h-4 text-yellow-600 mb-1"></i>
+                    <p class="text-xs text-slate-500">ゲーム料金</p>
+                    <p class="font-bold text-yellow-800">500円/5回</p>
+                </div>
+                <div class="bg-yellow-50 p-3 rounded-xl">
+                    <i data-lucide="camera" class="w-4 h-4 text-yellow-600 mb-1"></i>
+                    <p class="text-xs text-slate-500">フォト</p>
+                    <p class="font-bold text-yellow-800">おっ玉葱</p>
+                </div>
+            </div>
+
+            <!-- Mission -->
+            <div
+                class="bg-gradient-to-r from-yellow-400 to-orange-400 text-white p-4 rounded-xl shadow-lg mb-8 relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="font-bold text-lg mb-1 flex items-center gap-2">
+                        <i data-lucide="target" class="w-5 h-5"></i> MISSION
+                    </h2>
+                    <p class="text-sm font-bold opacity-90">「たまねぎキャッチャー」を攻略せよ！</p>
+                    <p class="text-xs mt-2 opacity-80">
+                        成功すれば玉ねぎ1.5kg。失敗しても玉ねぎ1個もらえる神仕様。<br>
+                        他にも「おっ玉葱」オブジェでの記念撮影はマスト！
+                    </p>
+                </div>
+                <i data-lucide="award"
+                    class="absolute -bottom-4 -right-4 w-24 h-24 text-white opacity-20 rotate-12"></i>
+            </div>
+
+            <!-- Food -->
+            <h2 class="text-lg font-bold text-slate-800 mb-3 flex items-center gap-2">
+                <span
+                    class="bg-orange-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs">2</span>
+                Gourmet
+            </h2>
+            <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm mb-4">
+                <h3 class="font-bold text-orange-800 mb-2">🍔 あわじ島オニオンキッチン</h3>
+                <p class="text-xs text-slate-600 mb-2">
+                    全国ご当地バーガーグランプリ1位の「あわじ島オニオンビーフバーガー」はここで食べられる！
+                </p>
+            </div>
+
+            <!-- Access Link -->
+            <a href="https://kinen.uzunokuni.com/" target="_blank"
+                class="block w-full bg-yellow-500 text-white font-bold text-center py-3 rounded-xl shadow-lg hover:bg-yellow-600 transition">
+                <i data-lucide="external-link" class="w-4 h-4 inline-block mr-1"></i> 公式サイト
+            </a>
+
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule | 淡路島日帰り旅 2025</title>
+    <link rel="icon" href="favicon.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+
+        .mono-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 1.25rem;
+            top: 2.5rem;
+            bottom: -1rem;
+            width: 2px;
+            background-color: #e2e8f0;
+            z-index: 0;
+        }
+
+        .last-item .timeline-line {
+            display: none;
+        }
+
+        .spot-card:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <!-- HEADER -->
+    <header
+        class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm h-16 flex items-center justify-between px-4">
+        <a href="index.html" class="flex items-center gap-2">
+            <i data-lucide="sun" class="text-orange-500 w-6 h-6"></i>
+            <span class="font-bold text-lg tracking-tight hidden sm:inline">AWAJI <span
+                    class="text-orange-500">TRIP</span></span>
+            <span class="font-bold text-lg tracking-tight sm:hidden">AWAJI</span>
+        </a>
+        <nav class="flex items-center gap-1 sm:gap-2">
+            <a href="day1.html"
+                class="mono-font text-sm font-bold text-orange-600 bg-orange-50 px-3 py-2 rounded border border-orange-100 transition-colors">Schedule</a>
+            <div class="h-5 w-px bg-slate-200 mx-1"></div>
+            <a href="car-manual.html"
+                class="flex items-center justify-center w-10 h-10 rounded-full bg-slate-100 text-slate-800 hover:bg-orange-100 transition-colors">
+                <i data-lucide="users" class="w-5 h-5"></i>
+            </a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow pt-20 pb-24 px-4 w-full max-w-md mx-auto">
+
+        <!-- Date Header -->
+        <div class="mb-8">
+            <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">SCHEDULE</h1>
+            <div class="flex items-center gap-2 text-slate-500 mt-1">
+                <i data-lucide="calendar" class="w-4 h-4"></i>
+                <span class="font-semibold">2025.1.6 (Mon)</span>
+            </div>
+            <div class="mt-4 flex gap-3">
+                <div
+                    class="bg-orange-50 text-orange-800 text-xs font-bold px-2 py-1 rounded flex items-center gap-1 border border-orange-100">
+                    <i data-lucide="sun" class="w-3 h-3"></i> 日帰り
+                </div>
+                <div
+                    class="bg-blue-50 text-blue-800 text-xs font-bold px-2 py-1 rounded flex items-center gap-1 border border-blue-100">
+                    <i data-lucide="car" class="w-3 h-3"></i> 自家用車
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 1: TIMELINE -->
+        <section id="timeline" class="mb-12">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-lg font-bold text-slate-800 flex items-center gap-2">
+                    <i data-lucide="clock" class="w-5 h-5 text-orange-600"></i>
+                    Time Schedule
+                </h2>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="space-y-0 relative">
+
+                <!-- 08:45 JR芦屋 -->
+                <div class="relative pl-12 pb-8">
+                    <div class="timeline-line"></div>
+                    <div
+                        class="absolute left-0 top-1 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10">
+                        <i data-lucide="train" class="w-5 h-5 text-blue-600"></i>
+                    </div>
+                    <div>
+                        <span class="mono-font text-sm font-bold text-blue-600">08:45</span>
+                        <h3 class="text-base font-bold text-slate-800">JR芦屋駅</h3>
+                        <p class="text-xs text-slate-600 mt-0.5">集合</p>
+                    </div>
+                </div>
+
+                <!-- 10:30 England Hill -->
+                <div class="relative pl-12 pb-8">
+                    <div class="timeline-line"></div>
+                    <div
+                        class="absolute left-0 top-1 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10">
+                        <i data-lucide="gamepad-2" class="w-5 h-5 text-green-600"></i>
+                    </div>
+                    <div>
+                        <span class="mono-font text-sm font-bold text-slate-500">10:30</span>
+                        <h3 class="text-base font-bold text-slate-800">イングランドの丘</h3>
+                        <div class="flex gap-2 mt-1 mb-1">
+                            <span
+                                class="text-[10px] bg-green-100 text-green-800 px-2 py-0.5 rounded font-bold">PLAY</span>
+                        </div>
+                        <a href="spot-england.html"
+                            class="inline-flex items-center gap-1 text-xs font-bold text-green-600 hover:underline">
+                            パンフレットを見る <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 12:30 Fukura Port (Lunch) -->
+                <div class="relative pl-12 pb-8">
+                    <div class="timeline-line"></div>
+                    <div
+                        class="absolute left-0 top-1 w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10">
+                        <i data-lucide="utensils" class="w-5 h-5 text-orange-600"></i>
+                    </div>
+                    <div>
+                        <span class="mono-font text-sm font-bold text-slate-500">12:30</span>
+                        <h3 class="text-base font-bold text-slate-800">福良港</h3>
+                        <div class="flex gap-2 mt-1 mb-1">
+                            <span
+                                class="text-[10px] bg-orange-100 text-orange-800 px-2 py-0.5 rounded font-bold">LUNCH</span>
+                        </div>
+                        <a href="spot-cruise.html"
+                            class="inline-flex items-center gap-1 text-xs font-bold text-orange-600 hover:underline">
+                            パンフレットを見る <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 13:30 Whirlpool Cruise -->
+                <div class="relative pl-12 pb-8">
+                    <div class="timeline-line"></div>
+                    <div
+                        class="absolute left-0 top-1 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10">
+                        <i data-lucide="ship" class="w-5 h-5 text-blue-600"></i>
+                    </div>
+                    <div>
+                        <span class="mono-font text-sm font-bold text-slate-500">13:30</span>
+                        <h3 class="text-base font-bold text-slate-800">渦潮クルーズ</h3>
+                        <div class="flex gap-2 mt-1 mb-1">
+                            <span
+                                class="text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-bold">CRUISE</span>
+                        </div>
+                        <a href="spot-cruise.html"
+                            class="inline-flex items-center gap-1 text-xs font-bold text-blue-600 hover:underline">
+                            パンフレットを見る <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 15:00 Memorial Hall -->
+                <div class="relative pl-12 pb-8">
+                    <div class="timeline-line"></div>
+                    <div
+                        class="absolute left-0 top-1 w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10">
+                        <i data-lucide="award" class="w-5 h-5 text-yellow-600"></i>
+                    </div>
+                    <div>
+                        <span class="mono-font text-sm font-bold text-slate-500">15:00</span>
+                        <h3 class="text-base font-bold text-slate-800">うずの丘大鳴門橋記念館</h3>
+                        <div class="flex gap-2 mt-1 mb-1">
+                            <span
+                                class="text-[10px] bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded font-bold">GAME</span>
+                        </div>
+                        <a href="spot-uzunoka.html"
+                            class="inline-flex items-center gap-1 text-xs font-bold text-yellow-600 hover:underline">
+                            パンフレットを見る <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 16:00 TBD -->
+                <div class="relative pl-12 pb-8">
+                    <div class="timeline-line"></div>
+                    <div
+                        class="absolute left-0 top-1 w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10">
+                        <i data-lucide="help-circle" class="w-5 h-5 text-slate-600"></i>
+                    </div>
+                    <div>
+                        <span class="mono-font text-sm font-bold text-slate-500">16:00</span>
+                        <h3 class="text-base font-bold text-slate-800">未定</h3>
+                        <p class="text-xs text-slate-500">多分当日決めるんじゃね？</p>
+                    </div>
+                </div>
+
+                <!-- Evening Dinner -->
+                <div class="relative pl-12 pb-8">
+                    <div class="timeline-line"></div>
+                    <div
+                        class="absolute left-0 top-1 w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10">
+                        <i data-lucide="coffee" class="w-5 h-5 text-indigo-600"></i>
+                    </div>
+                    <div>
+                        <span class="mono-font text-sm font-bold text-slate-500">Evening</span>
+                        <h3 class="text-base font-bold text-slate-800">夕食</h3>
+                        <p class="text-xs text-slate-500">高速の渋滞よけ</p>
+                    </div>
+                </div>
+
+                <!-- 19:00 Return -->
+                <div class="relative pl-12 pb-8 last-item">
+                    <div
+                        class="absolute left-0 top-1 w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center border-2 border-white shadow-sm z-10">
+                        <i data-lucide="home" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <div>
+                        <span class="mono-font text-sm font-bold text-slate-500">19:00</span>
+                        <h3 class="text-base font-bold text-slate-800">JR芦屋 / 帰宅</h3>
+                        <div
+                            class="mt-1 bg-amber-50 text-amber-900 text-[10px] p-1.5 rounded border border-amber-200 inline-block">
+                            <i data-lucide="check-circle" class="w-3 h-3 inline mr-1"></i>
+                            Mission Complete
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="border-slate-200 mb-12">
+
+        <!-- SECTION 2: SPOT GUIDE -->
+        <section id="spots" class="space-y-10">
+            <h2 class="text-lg font-bold text-slate-800 flex items-center gap-2 mb-6">
+                <i data-lucide="map-pin" class="w-5 h-5 text-orange-600"></i>
+                Spot Guide
+            </h2>
+
+            <!-- SPOT 1: イングランドの丘 -->
+            <article id="spot-england" class="scroll-mt-20">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="bg-green-600 px-4 py-3 flex items-center justify-between">
+                        <h3 class="text-white font-bold text-lg">🐨 イングランドの丘</h3>
+                        <i data-lucide="paw-print" class="text-white/80 w-5 h-5"></i>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-xs font-mono text-green-600 font-bold mb-2">AWAJI FARM PARK ENGLAND HILL</div>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-4">
+                            淡路島にある自然豊かな農業公園。コアラをはじめとする動物たちとのふれあい、四季折々の花畑、収穫体験や手作り体験、そして淡路島グルメが楽しめます。
+                        </p>
+
+                        <div class="bg-slate-50 rounded-lg p-3 border border-slate-100">
+                            <h4 class="text-xs font-bold text-slate-500 mb-2 flex items-center gap-1">
+                                <i data-lucide="star" class="w-3 h-3"></i> HIGHLIGHTS
+                            </h4>
+                            <ul class="space-y-2">
+                                <li class="flex gap-2">
+                                    <div class="mt-0.5 min-w-[4px] h-[4px] bg-green-500 rounded-full"></div>
+                                    <div class="text-sm text-slate-800">
+                                        <span class="font-bold">コアラ館</span>
+                                        <p class="text-xs text-slate-500 mt-0.5">
+                                            関西でコアラに会える貴重なスポット！赤ちゃんコアラ「ナギ」（2023年生まれ）が成長中。可愛い寝姿を観察しよう。</p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-2">
+                                    <div class="mt-0.5 min-w-[4px] h-[4px] bg-green-500 rounded-full"></div>
+                                    <div class="text-sm text-slate-800">
+                                        <span class="font-bold">動物ふれあい広場</span>
+                                        <p class="text-xs text-slate-500 mt-0.5">ウサギ、モルモット、ワラビー、カピバラなど。エサやり体験も可能。</p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-2">
+                                    <div class="mt-0.5 min-w-[4px] h-[4px] bg-green-500 rounded-full"></div>
+                                    <div class="text-sm text-slate-800">
+                                        <span class="font-bold">冬咲きチューリップ</span>
+                                        <p class="text-xs text-slate-500 mt-0.5">1月〜2月中旬が見頃。冬なのにカラフルなチューリップ畑が広がります。</p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-2">
+                                    <div class="mt-0.5 min-w-[4px] h-[4px] bg-green-500 rounded-full"></div>
+                                    <div class="text-sm text-slate-800">
+                                        <span class="font-bold">グルメ</span>
+                                        <p class="text-xs text-slate-500 mt-0.5">淡路島牛乳ソフトクリーム、淡路島バーガー、石窯ピザなど。</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4 grid grid-cols-2 gap-2">
+                            <div class="bg-green-50 p-2 rounded border border-green-100">
+                                <span class="text-xs text-green-600 block">入園料</span>
+                                <span class="text-sm font-bold text-green-800">大人1,200円</span>
+                            </div>
+                            <div class="bg-green-50 p-2 rounded border border-green-100">
+                                <span class="text-xs text-green-600 block">営業時間</span>
+                                <span class="text-sm font-bold text-green-800">9:30〜17:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- SPOT 2: 福良港 -->
+            <article id="spot-fukura" class="scroll-mt-20">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="bg-orange-600 px-4 py-3 flex items-center justify-between">
+                        <h3 class="text-white font-bold text-lg">🍽️ 福良港 / 道の駅福良</h3>
+                        <i data-lucide="anchor" class="text-white/80 w-5 h-5"></i>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-xs font-mono text-orange-600 font-bold mb-2">FUKURA PORT - MICHINOEKI</div>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-4">
+                            淡路島南端、鳴門海峡に面する港町。うずしおクルーズの発着港であり、道の駅として食事・お土産・観光案内が充実しています。
+                        </p>
+
+                        <div class="bg-slate-50 rounded-lg p-3 border border-slate-100">
+                            <h4 class="text-xs font-bold text-slate-500 mb-2 flex items-center gap-1">
+                                <i data-lucide="star" class="w-3 h-3"></i> HIGHLIGHTS
+                            </h4>
+                            <ul class="space-y-2">
+                                <li class="flex gap-2">
+                                    <div class="mt-0.5 min-w-[4px] h-[4px] bg-orange-500 rounded-full"></div>
+                                    <div class="text-sm text-slate-800">
+                                        <span class="font-bold">福良マルシェ</span>
+                                        <p class="text-xs text-slate-500 mt-0.5">地元の特産品や新鮮な魚介類が購入できる産直市場。淡路玉ねぎや海産物がおすすめ。
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-2">
+                                    <div class="mt-0.5 min-w-[4px] h-[4px] bg-orange-500 rounded-full"></div>
+                                    <div class="text-sm text-slate-800">
+                                        <span class="font-bold">淡路人形座</span>
+                                        <p class="text-xs text-slate-500 mt-0.5">約500年の歴史を持つ伝統芸能「淡路人形浄瑠璃」を鑑賞できる施設。</p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-2">
+                                    <div class="mt-0.5 min-w-[4px] h-[4px] bg-orange-500 rounded-full"></div>
+                                    <div class="text-sm text-slate-800">
+                                        <span class="font-bold">うずの湯（足湯）</span>
+                                        <p class="text-xs text-slate-500 mt-0.5">無料で利用できる足湯。クルーズ待ち時間にピッタリ。</p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-2">
+                                    <div class="mt-0.5 min-w-[4px] h-[4px] bg-orange-500 rounded-full"></div>
+                                    <div class="text-sm text-slate-800">
+                                        <span class="font-bold">海鮮ランチ</span>
+                                        <p class="text-xs text-slate-500 mt-0.5">新鮮な海の幸を使った海鮮丼や定食が楽しめるレストランが複数あり。</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- SPOT 3: うずしおクルーズ -->
+            <article id="spot-cruise" class="scroll-mt-20">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="bg-blue-600 px-4 py-3 flex items-center justify-between">
+                        <h3 class="text-white font-bold text-lg">🚢 うずしおクルーズ</h3>
+                        <i data-lucide="ship" class="text-white/80 w-5 h-5"></i>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-xs font-mono text-blue-600 font-bold mb-2">UZUSHIO CRUISE</div>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-4">
+                            福良港から出航し、世界最大級の渦潮を間近で体験できるクルーズ。大鳴門橋の下を通過し、迫力ある自然のショーを楽しめます。
+                        </p>
+
+                        <div class="bg-slate-50 rounded-lg p-3 border border-slate-100 mb-4">
+                            <h4 class="text-xs font-bold text-slate-500 mb-2 flex items-center gap-1">
+                                <i data-lucide="star" class="w-3 h-3"></i> HIGHLIGHTS
+                            </h4>
+                            <ul class="space-y-2">
+                                <li class="flex gap-2">
+                                    <div class="mt-0.5 min-w-[4px] h-[4px] bg-blue-500 rounded-full"></div>
+                                    <div class="text-sm text-slate-800">
+                                        <span class="font-bold">鳴門の渦潮</span>
+                                        <p class="text-xs text-slate-500 mt-0.5">大潮時には直径20〜30mにも達する巨大な渦が発生。春と秋がベストシーズン。
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-2">
+                                    <div class="mt-0.5 min-w-[4px] h-[4px] bg-blue-500 rounded-full"></div>
+                                    <div class="text-sm text-slate-800">
+                                        <span class="font-bold">咸臨丸（かんりんまる）</span>
+                                        <p class="text-xs text-slate-500 mt-0.5">日本初の太平洋横断を成功させた蒸気帆船を復元した観光船。船内バリアフリー。
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-2">
+                                    <div class="mt-0.5 min-w-[4px] h-[4px] bg-blue-500 rounded-full"></div>
+                                    <div class="text-sm text-slate-800">
+                                        <span class="font-bold">大鳴門橋</span>
+                                        <p class="text-xs text-slate-500 mt-0.5">全長1,629m、橋の下を船で通過する迫力の体験。</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-blue-50 p-3 rounded border border-blue-100 mb-4">
+                            <h4 class="text-xs font-bold text-blue-700 mb-2">⏱️ クルーズ情報</h4>
+                            <div class="grid grid-cols-2 gap-2 text-sm">
+                                <div>
+                                    <span class="text-xs text-blue-600 block">所要時間</span>
+                                    <span class="font-bold text-blue-800">約1時間</span>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-blue-600 block">運航本数</span>
+                                    <span class="font-bold text-blue-800">1日6〜7便</span>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-blue-600 block">大人料金</span>
+                                    <span class="font-bold text-blue-800">3,000円</span>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-blue-600 block">小人料金</span>
+                                    <span class="font-bold text-blue-800">1,500円</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-amber-50 p-2 rounded border border-amber-200 text-xs text-amber-800">
+                            <strong>💡 TIP:</strong> 出航30分前には集合場所へ。事前予約推奨。公式サイトで「潮見表」をチェックして渦の期待度を確認しよう！
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- SPOT 4: うずの丘大鳴門橋記念館 -->
+            <article id="spot-uzunoka" class="scroll-mt-20">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="bg-yellow-500 px-4 py-3 flex items-center justify-between">
+                        <h3 class="text-white font-bold text-lg">🧅 うずの丘大鳴門橋記念館</h3>
+                        <i data-lucide="trophy" class="text-white/80 w-5 h-5"></i>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-xs font-mono text-yellow-600 font-bold mb-2">UZUNOKA ONARUTO BRIDGE MEMORIAL
+                            HALL</div>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-4">
+                            大鳴門橋と鳴門海峡を一望できる絶景スポット。淡路島名産の玉ねぎをテーマにしたユニークなアトラクションや、絶品グルメが楽しめます。
+                        </p>
+
+                        <div class="bg-slate-50 rounded-lg p-3 border border-slate-100 mb-4">
+                            <h4 class="text-xs font-bold text-slate-500 mb-2 flex items-center gap-1">
+                                <i data-lucide="star" class="w-3 h-3"></i> HIGHLIGHTS
+                            </h4>
+                            <ul class="space-y-2">
+                                <li class="flex gap-2">
+                                    <div class="mt-0.5 min-w-[4px] h-[4px] bg-yellow-500 rounded-full"></div>
+                                    <div class="text-sm text-slate-800">
+                                        <span class="font-bold">🕹️ たまねぎキャッチャー</span>
+                                        <p class="text-xs text-slate-500 mt-0.5">
+                                            本物の玉ねぎをクレーンゲームで獲得！500円で5回挑戦。1個でも取れれば玉ねぎ1.5kgプレゼント。取れなくても参加賞あり！</p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-2">
+                                    <div class="mt-0.5 min-w-[4px] h-[4px] bg-yellow-500 rounded-full"></div>
+                                    <div class="text-sm text-slate-800">
+                                        <span class="font-bold">巨大玉ねぎ「おっ玉葱」</span>
+                                        <p class="text-xs text-slate-500 mt-0.5">巨大な玉ねぎオブジェ。記念撮影マスト！たまねぎカツラも借りられます。</p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-2">
+                                    <div class="mt-0.5 min-w-[4px] h-[4px] bg-yellow-500 rounded-full"></div>
+                                    <div class="text-sm text-slate-800">
+                                        <span class="font-bold">うずしお科学館</span>
+                                        <p class="text-xs text-slate-500 mt-0.5">
+                                            渦潮の発生メカニズムを学べる施設。巨大スクリーン「ウズネタリウム」や体感スライダーも。</p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-2">
+                                    <div class="mt-0.5 min-w-[4px] h-[4px] bg-yellow-500 rounded-full"></div>
+                                    <div class="text-sm text-slate-800">
+                                        <span class="font-bold">あわじ島バーガー</span>
+                                        <p class="text-xs text-slate-500 mt-0.5">全国ご当地バーガーグランプリ1位獲得！淡路島オニオンキッチンで味わえます。
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-2">
+                                    <div class="mt-0.5 min-w-[4px] h-[4px] bg-yellow-500 rounded-full"></div>
+                                    <div class="text-sm text-slate-800">
+                                        <span class="font-bold">絶景テラス</span>
+                                        <p class="text-xs text-slate-500 mt-0.5">大鳴門橋と鳴門海峡のパノラマビュー。夕日も綺麗。</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-yellow-50 p-2 rounded border border-yellow-200 text-xs text-yellow-800">
+                            <strong>🎯 ミッション:</strong> たまねぎキャッチャーで玉ねぎGETせよ！（難易度高め）
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-slate-200 py-6 px-4 text-center mt-auto">
+        <div class="flex justify-center gap-6 mb-4">
+            <a href="https://www.google.com/maps" target="_blank"
+                class="flex flex-col items-center gap-1 text-slate-400 hover:text-orange-600 transition-colors">
+                <i data-lucide="map" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold uppercase">Map</span>
+            </a>
+            <a href="tel:110"
+                class="flex flex-col items-center gap-1 text-slate-400 hover:text-red-500 transition-colors">
+                <i data-lucide="phone-call" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold uppercase">緊急通報</span>
+            </a>
+        </div>
+        <p class="text-[15px] text-slate-400 mono-font">Pj-AWAJI 2025 v1.0.0</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

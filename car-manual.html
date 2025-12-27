@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Instructions | Awaji Trip 2025</title>
+    <link rel="icon" href="favicon.png">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1a1a1a;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .safety-card {
+            background-color: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 2px solid #000;
+        }
+
+        .header {
+            background-color: #D32F2F;
+            /* Safety Red */
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #FBC02D;
+            /* Safety Yellow */
+        }
+
+        .header h1 {
+            font-family: 'Roboto Condensed', sans-serif;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .header .subtitle {
+            font-size: 0.8rem;
+            font-weight: bold;
+            opacity: 0.9;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2px;
+            background-color: #000;
+            border-bottom: 2px solid #000;
+        }
+
+        .panel {
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .panel-number {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #000;
+            color: #FBC02D;
+            font-weight: bold;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .icon-large {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .panel h3 {
+            font-family: 'Roboto Condensed', sans-serif;
+            text-transform: uppercase;
+            margin: 0 0 5px 0;
+            font-size: 1.1rem;
+        }
+
+        .panel p {
+            font-size: 0.85rem;
+            color: #444;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .emergency-section {
+            background-color: #FBC02D;
+            padding: 15px;
+            text-align: center;
+            border-top: 2px solid #000;
+        }
+
+        .emergency-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #D32F2F;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Roboto Condensed', sans-serif;
+            text-transform: uppercase;
+            border: 2px solid #000;
+            box-shadow: 2px 2px 0 #000;
+            margin: 5px;
+        }
+
+        .emergency-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: none;
+        }
+
+        .illustration-img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #000;
+            margin-bottom: 20px;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="safety-card">
+        <header class="header">
+            <div>
+                <h1>Safety Instructions</h1>
+                <div class="subtitle">安全のしおり - KOALA AIRLINES (CAR)</div>
+            </div>
+            <i data-lucide="shield-alert" style="width: 32px; height: 32px;"></i>
+        </header>
+
+        <div style="padding: 2px; background: #000;">
+            <img src="safety.png" alt="Safety Illustration" style="width: 100%; display: block;">
+        </div>
+
+        <div class="grid-container">
+            <!-- Panel 1: Fasten Seatbelt -->
+            <div class="panel">
+                <div class="panel-number">1</div>
+                <i data-lucide="armchair" class="icon-large"></i>
+                <h3>Fasten Seatbelt</h3>
+                <p>全席シートベルト着用。<br>Click it or Ticket.</p>
+            </div>
+
+            <!-- Panel 2: Navigator -->
+            <div class="panel">
+                <div class="panel-number">2</div>
+                <i data-lucide="map" class="icon-large" style="color: #1976D2;"></i>
+                <h3>Navigator</h3>
+                <p>助手席はコパイロット。<br>Google Mapsで誘導を。</p>
+            </div>
+
+            <!-- Panel 3: DJ -->
+            <div class="panel">
+                <div class="panel-number">3</div>
+                <i data-lucide="music" class="icon-large" style="color: #9C27B0;"></i>
+                <h3>In-Car DJ</h3>
+                <p>Bluetooth接続。<br>空気の読める選曲を。</p>
+            </div>
+
+            <!-- Panel 4: Snack Service -->
+            <div class="panel">
+                <div class="panel-number">4</div>
+                <i data-lucide="cookie" class="icon-large" style="color: #F57C00;"></i>
+                <h3>Snack Service</h3>
+                <p>お菓子とドリンクの配給。<br>パイロットへの給水を忘れずに。</p>
+            </div>
+
+            <!-- Panel 5: Emergency Exits -->
+            <div class="panel">
+                <div class="panel-number">5</div>
+                <i data-lucide="door-open" class="icon-large"></i>
+                <h3>Exits</h3>
+                <p>スライドドアは電動です。<br>無理に開けないでください。</p>
+            </div>
+
+            <!-- Panel 6: No Smoking -->
+            <div class="panel">
+                <div class="panel-number">6</div>
+                <i data-lucide="cigarette-off" class="icon-large" style="color: #D32F2F;"></i>
+                <h3>No Smoking</h3>
+                <p>全席禁煙。<br>アイコスもNGです。</p>
+            </div>
+        </div>
+
+        <div class="emergency-section">
+            <h3 style="font-family: 'Roboto Condensed'; text-transform: uppercase; margin-bottom: 10px;">In Case of
+                Emergency</h3>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+                <a href="tel:110" class="emergency-btn">
+                    <i data-lucide="phone"></i> Police 110
+                </a>
+                <a href="tel:119" class="emergency-btn">
+                    <i data-lucide="ambulance"></i> Fire/Amb 119
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-link">← Return to Main Menu</a>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
